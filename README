@@ -1,10 +1,34 @@
 #remove_accents.py
 This is a python program to remove all accents from a polytonic ancient greek document
 
-Usage: ./python_accents.py polytonic_file monotonic_file
+Usage: python ./remove_accents.py polytonic_file monotonic_file
 
 Save your ancient greek polytonic text to a file e.g. polyt.txt then run
 
 python ./remove_accents.py polyt.txt mono.txt
 
 You will get the new text with no accents in file mono.txt
+
+==Ancient doc ==
+Ὦ κοινὸν αὐτάδελφον Ἰσμήνης κάρα,
+ἆρ᾿ οἶσθ᾿ ὅ τι Ζεὺς τῶν ἀπ᾿ Οἰδίπου κακῶν
+ὁποῖον οὐχὶ νῷν ἔτι ζώσαιν τελεῖ
+Οὐδὲν γὰρ οὔτ᾿ ἀλγεινὸν οὔτ᾿ ἄτης ἄτερ
+οὔτ᾿ αἰσχρὸν οὔτ᾿ ἄτιμόν ἐσθ᾿ ὁποῖον οὐ
+τῶν σῶν τε κἀμῶν οὐκ ὄπωπ᾿ ἐγὼ κακῶν.
+Καὶ νῦν τί τοῦτ᾿ αὖ φασι πανδήμῳ πόλει
+κήρυγμα θεῖναι τὸν στρατηγὸν ἀρτίως;
+Ἔχεις τι κεἰσήκουσας; ἤ σε λανθάνει
+πρὸς τοὺς φίλους στείχοντα τῶν ἐχθρῶν κακά;
+
+== mono.txt ===
+Ω κοινον αυταδελφον Ισμηνης καρα,
+αρ᾿ οισθ᾿ ο τι Ζευς των απ᾿ Οιδιπου κακων
+οποιον ουχι νων ετι ζωσαιν τελει
+Ουδεν γαρ ουτ᾿ αλγεινον ουτ᾿ ατης ατερ
+ουτ᾿ αισχρον ουτ᾿ ατιμον εσθ᾿ οποιον ου
+των σων τε καμων ουκ οπωπ᾿ εγω κακων.
+Και νυν τι τουτ᾿ αυ φασι πανδημω πολει
+κηρυγμα θειναι τον στρατηγον αρτιως;
+Εχεις τι κεισηκουσας; η σε λανθανει
+προς τους φιλους στειχοντα των εχθρων κακα;
