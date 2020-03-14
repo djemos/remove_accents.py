@@ -18,6 +18,12 @@ else:
 def strip_accents(s):
    return ''.join(c for c in unicodedata.normalize('NFD', s)
                   if unicodedata.category(c) != 'Mn')
+
+def help():
+	print('usage: python ./remove_accents.py polytonic_file monotonic_file')
+	text=str("Ὦ κοινὸν αὐτάδελφον Ἰσμήνης κάρα,")
+	print(strip_accents(text))
+	sys.exit(1)
         
 def main(args):
 	if len(sys.argv) >=3:
@@ -29,10 +35,7 @@ def main(args):
 		f.write(strip_accents(text))
 		f.close()
 	else:
-		#Δοκιμή
-		text=str("Ὦ κοινὸν αὐτάδελφον Ἰσμήνης κάρα,")
-		print(strip_accents(text))
-    
+		help()
 
 if __name__ == '__main__':
 	import sys
