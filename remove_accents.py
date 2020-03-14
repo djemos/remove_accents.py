@@ -20,13 +20,12 @@ def strip_accents(s):
                   if unicodedata.category(c) != 'Mn')
         
 def main(args):
-	coding1 = "utf-8"
 	if len(sys.argv) >=3:
-		f= open(sys.argv[1], 'rb')		
-		text= str(f.read(), coding1)
+		f= open(sys.argv[1], 'r')		
+		text= str(f.read())
 		f.close()
 
-		f= open(sys.argv[2], 'wb')
+		f= open(sys.argv[2], 'w')
 		f.write(strip_accents(text))
 		f.close()
 	else:
