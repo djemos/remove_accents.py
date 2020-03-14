@@ -7,6 +7,9 @@ Save your ancient greek polytonic text to a file e.g. polyt.txt then run
 
 python ./remove_accents.py polyt.txt mono.txt
 
+if you have python3 also installed then run 
+python3 ./remove_accents.py polyt.txt mono.txt
+
 You will get the new text with no accents in file mono.txt
 
 ==Ancient doc ==
